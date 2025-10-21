@@ -6,6 +6,7 @@ import federation from '@originjs/vite-plugin-federation'
 
 // ...existing code...
 export default defineConfig({
+  base: '/remote-homepage/',
   plugins: [
     react(),
     federation({
