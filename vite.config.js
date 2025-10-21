@@ -41,8 +41,13 @@ export default defineConfig({
   build: {
     modulePreload: false,
     target: 'esnext',
-    minify: false,
-    cssCodeSplit: false,
+    minify: true,
+    cssCodeSplit: true,
+    outDir: 'dist',
+  },
+  preview: {
+    port: 5002,
+    strictPort: true,
   },
 })
 // ...existing code...
