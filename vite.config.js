@@ -9,7 +9,7 @@ export default defineConfig({
   plugins: [
     react(),
     federation({
-      name: 'remote_homepage',
+      name: 'remote-homepage',
       filename: 'remoteEntry.js',
       exposes: {
         './Homepage': './src/pages/Homepage.jsx',
